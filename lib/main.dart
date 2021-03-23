@@ -13,18 +13,78 @@ class FlutterBootcamp extends StatelessWidget{
   Widget build(BuildContext context) {
    return MaterialApp(
      home: Scaffold(
-       body: Center(
-         child: Text(Strings.bodytext,
-          style: TextStyle(
-             fontSize: 30,
-              color: Colors.deepOrange,
-            fontFamily: 'ArchitectsDaughter',
-          ),
-         ),
-       ),
-       floatingActionButton: FloatingActionButton(
+       appBar: AppBar(
+         centerTitle: true,
          backgroundColor: Colors.deepOrange,
-         child: Text("Click"),
+         title: Text(Strings.titletext),
+       ),
+       body: Row(
+         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+         children: [
+           Column(
+             children: [
+               Container(
+                 color: Colors.blue,
+                 child: Text("Skillto"),
+                 padding: EdgeInsets.all(30),
+
+               ),
+               FlatButton(
+                 color: Colors.deepOrange,
+                 child: Text("Skillto"),
+                 onPressed: (){},
+               ),
+               Container(
+                 color: Colors.green,
+                 child: Text("Skillto"),
+                 padding: EdgeInsets.all(30),
+
+               ),
+             ],
+           ),
+           Column(
+             children: [
+               Container(
+                 color: Colors.blue,
+                 child: Text("Skillto"),
+                 padding: EdgeInsets.all(30),
+
+               ),
+               FlatButton(
+                 color: Colors.deepOrange,
+                 child: Text("Skillto"),
+                 onPressed: (){},
+               ),
+               Container(
+                 color: Colors.green,
+                 child: Text("Skillto"),
+                 padding: EdgeInsets.all(30),
+
+               ),
+             ],
+           ),
+           Column(
+             children: [
+               Container(
+                 color: Colors.blue,
+                 child: Text("Skillto"),
+                 padding: EdgeInsets.all(30),
+
+               ),
+               FlatButton(
+                 color: Colors.deepOrange,
+                 child: Text("Skillto"),
+                 onPressed: (){},
+               ),
+               Container(
+                 color: Colors.green,
+                 child: Text("Skillto"),
+                 padding: EdgeInsets.all(30),
+
+               ),
+             ],
+           ),
+         ],
        ),
      ),
    );
