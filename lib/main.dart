@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'strings.dart';
 
 void main(){
-
   runApp(FlutterBootcamp());
-
 }
 
 class FlutterBootcamp extends StatelessWidget{
@@ -18,69 +16,117 @@ class FlutterBootcamp extends StatelessWidget{
          backgroundColor: Colors.deepOrange,
          title: Text(Strings.titletext),
        ),
-       body: Row(
-         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+       body: Column(
          children: [
-           Column(
+           Row(
              children: [
-               Container(
-                 color: Colors.blue,
-                 child: Text("Skillto"),
-                 padding: EdgeInsets.all(30),
-
+               Expanded(
+                 flex: 1,
+                 child: Container(
+                   padding: EdgeInsets.all(20),
+                   color: Colors.deepOrange,
+                   child: Text("A"),
+                 ),
                ),
-               FlatButton(
-                 color: Colors.deepOrange,
-                 child: Text("Skillto"),
-                 onPressed: (){},
+               Expanded(
+                 flex: 4,
+                 child: Container(
+                   padding: EdgeInsets.all(20),
+                   color: Colors.blue,
+                   child: Text("B"),
+                 ),
                ),
-               Container(
-                 color: Colors.green,
-                 child: Text("Skillto"),
-                 padding: EdgeInsets.all(30),
-
+               Expanded(
+                 flex: 2,
+                 child: Container(
+                   padding: EdgeInsets.all(20),
+                   color: Colors.green,
+                   child: Text("C"),
+                 ),
+               ),
+               Expanded(
+                 flex: 4,
+                 child: Container(
+                   padding: EdgeInsets.all(20),
+                   color: Colors.yellow,
+                   child: Text("D"),
+                 ),
                ),
              ],
            ),
-           Column(
+           Divider(
+           ),
+           Row(
              children: [
-               Container(
-                 color: Colors.blue,
-                 child: Text("Skillto"),
-                 padding: EdgeInsets.all(30),
-
+               Expanded(
+                 flex: 4,
+                 child: Container(
+                   padding: EdgeInsets.all(20),
+                   color: Colors.deepOrange,
+                   child: Text("A"),
+                 ),
                ),
-               FlatButton(
-                 color: Colors.deepOrange,
-                 child: Text("Skillto"),
-                 onPressed: (){},
+               Expanded(
+                 flex: 3,
+                 child: Container(
+                   padding: EdgeInsets.all(20),
+                   color: Colors.blue,
+                   child: Text("B"),
+                 ),
                ),
-               Container(
-                 color: Colors.green,
-                 child: Text("Skillto"),
-                 padding: EdgeInsets.all(30),
-
+               Expanded(
+                 flex: 3,
+                 child: Container(
+                   padding: EdgeInsets.all(20),
+                   color: Colors.green,
+                   child: Text("C"),
+                 ),
+               ),
+               Expanded(
+                 flex: 1,
+                 child: Container(
+                   padding: EdgeInsets.all(20),
+                   color: Colors.yellow,
+                   child: Text("D"),
+                 ),
                ),
              ],
            ),
-           Column(
+           SizedBox(
+             height: 20,
+           ),
+           Row(
              children: [
-               Container(
-                 color: Colors.blue,
-                 child: Text("Skillto"),
-                 padding: EdgeInsets.all(30),
-
+               Expanded(
+                 flex: 2,
+                 child: CircleAvatar(
+                   backgroundImage: AssetImage('assets/sky.jpg'),
+                   radius: 100,
+                 ),
                ),
-               FlatButton(
-                 color: Colors.deepOrange,
-                 child: Text("Skillto"),
-                 onPressed: (){},
+               Expanded(
+                 flex: 1,
+                 child: Container(
+                   padding: EdgeInsets.all(20),
+                   color: Colors.blue,
+                   child: Text("B"),
+                 ),
                ),
-               Container(
-                 color: Colors.green,
-                 child: Text("Skillto"),
-                 padding: EdgeInsets.all(30),
-
+               Expanded(
+                 flex: 2,
+                 child: Container(
+                   padding: EdgeInsets.all(20),
+                   color: Colors.green,
+                   child: Text("C"),
+                 ),
+               ),
+               Expanded(
+                 flex: 2,
+                 child: Container(
+                   padding: EdgeInsets.all(20),
+                   color: Colors.yellow,
+                   child: Text("D"),
+                 ),
                ),
              ],
            ),
